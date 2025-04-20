@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+
+  <!-- CSS -->
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- App Container -->
+  <div class="min-h-screen flex flex-col">
+    <!-- App Header Component -->
+    <app-header title="Notes App" subtitle="Catat semua ide dan pikiran Anda"></app-header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <div class="container">
+        <!-- Note Form Component -->
+        <note-form></note-form>
+
+        <!-- Notes Container -->
+        <div class="mt-12">
+          <h2 class="text-2xl font-bold mb-6 text-indigo-700">Catatan Anda</h2>
+          <div class="notes-grid" id="notes-container">
+            <!-- Notes will be rendered here -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- App Footer Component -->
+    <app-footer copyright="© 2025 Notes App" author="Created with ❤️"></app-footer>
+  </div>
+
+  <script src="tes.js"></script>
+</body>
+
+</html>
