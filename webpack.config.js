@@ -22,11 +22,16 @@ module.exports = {
       filename: 'index.html',
     }),
   ],
+  // devServer: {
+  //   static: path.join(__dirname, 'dist'),
+  //   compress: true,
+  //   port: 9000,
+  //   open: true,
+  // },
   devServer: {
-    static: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
-    open: true,
+    host: '0.0.0.0', // Penting agar bisa diakses dari luar container
+    port: 3000,
+    open: true
   },
   mode: 'development',
 };
